@@ -1,0 +1,79 @@
+<!--
+<body>
+    <div>
+       
+            <input type="text" name="tbox" id="tbox" > -->
+<!-- <input type="button" value="demo" onclick="javascript:myAdd()">  -->
+
+
+<!--      <div id="demo"></div>
+    </div>
+
+    <script>
+        document.getElementById("tbox").onkeypress = textEnter;
+        function textEnter(event){
+            //document.getElementById("tbox").
+            if( event.which == 13){
+                myAdd();
+                
+               }
+
+        }
+
+        function myAdd() {
+            var input1 = document.getElementById("tbox").value;
+
+            var p = document.createElement("p");
+            p.id = "pid";
+
+            var x = document.createElement("input");
+            x.type = "checkbox";
+            x.id = "cbid";
+            x.name = "cbname";
+            x.onchange = myStrike;
+
+            p.appendChild(x);
+
+            var sp = document.createElement("span");
+            sp.id = "spanid";
+            sp.textContent = input1;
+            p.appendChild(sp);
+
+            var btn = document.createElement("button");
+            btn.name = "removebtn";
+            btn.class = "removebtnclass";
+            btn.value = "removetext";
+            btn.textContent = "remove";
+            btn.onclick = removeElement;
+            p.appendChild(btn);
+
+            document.getElementById("demo").appendChild(p);
+
+            function removeElement() {
+                
+            
+                var element = document.getElementById("pid");
+            
+                element.parentElement.removeChild(p);
+                
+
+
+             }
+
+            function myStrike() {
+                if (x.checked == true) {
+                    sp.innerHTML = '<strike>' + input1 + '</strike>';
+                }
+                else {
+                    sp.innerHTML = input1;
+                }
+             }
+
+
+             
+
+            }
+
+    </script>
+</body>
+-->
